@@ -1,0 +1,1394 @@
+/* フォント */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400');
+/* M+fonts:http://mplus-webfonts.osdn.jp/ Axisに似てる */
+  @font-face{ 
+    font-family: 'mplus-1p-thin';
+    /* src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-thin.eot'); */
+    src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-thin.eot?#iefix') format('embedded-opentype'),
+         url('http://mplus-webfonts.sourceforge.jp/mplus-1p-thin.woff') format('woff'),
+         url('http://mplus-webfonts.sourceforge.jp/mplus-1p-thin.ttf') format('truetype');
+  }
+  @font-face{ 
+    font-family: 'mplus-1p-light';
+    /* src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-light.eot'); */
+    src: /* url('http://mplus-webfonts.sourceforge.jp/mplus-1p-light.eot?#iefix') format('embedded-opentype'), */
+         /* url('http://mplus-webfonts.sourceforge.jp/mplus-1p-light.woff') format('woff'), */
+         url('http://mplus-webfonts.sourceforge.jp/mplus-1p-light.ttf') format('truetype');
+  }
+  @font-face{ 
+    font-family: 'mplus-1p-medium';
+    /* src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-medium.eot'); */
+    src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-medium.eot?#iefix') format('embedded-opentype'),
+         url('http://mplus-webfonts.sourceforge.jp/mplus-1p-medium.woff') format('woff'),
+         url('http://mplus-webfonts.sourceforge.jp/mplus-1p-medium.ttf') format('truetype');
+  }
+  @font-face{ 
+    font-family: 'mplus-1p-regular';
+    /* src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.eot'); */
+    src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.eot?#iefix') format('embedded-opentype'),
+         url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.woff') format('woff'),
+         url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.ttf') format('truetype');
+  }
+
+html {
+    overflow: auto;
+}
+body {
+    overflow: hidden;
+	min-width: 1040px;
+}
+#page {
+    font-family: 'M PLUS 1p', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    /* font-family: 'Kosugi', sans-serif; */
+    /* font-family: 'Noto Sans SC', sans-serif; */
+    margin-bottom: 22px;
+}
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+/* サイトヘッダー 最上部 globalnaviより上*/
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+#pageHead {
+    background: rgba(255, 255, 255, 1.0);
+    position: relative;
+    z-index: 2;
+    /* width: 100%; */
+}
+
+/* サイトヘッダー　最上部・・・入学案内～ログイン部分 */
+#pageHead #globalNaviAll {
+    background: #f7f7f7;
+    width: 100%;
+}
+#pageHead #globalNaviAllContent {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1040px;
+}
+#pageHead #globalNaviAllLeft p {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.462;
+    margin: 8px 0 3px 0;
+    padding: 0;
+}
+#pageHead #globalNaviAllRight {
+    display: flex;
+    flex-wrap: nowrap;
+    /* align-content: center;
+    vertical-align: middle; */
+    height: 100%;
+    margin: auto 0;
+}    
+#pageHead #globalNaviAllRight ul {
+    display: flex;
+    flex-wrap: nowrap;
+    /* align-content: center;
+    vertical-align: middle; */
+    margin: 0;
+    padding: 0;
+}
+#pageHead #globalNaviAllRight ul li {
+    background-image: url('../images/header01_intro_nav01_bg01.png');
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    /* align-content: center;
+    vertical-align: middle; */
+    list-style: none;
+}
+#pageHead #globalNaviAllRight ul li:first-child {
+    background: none;
+}
+#pageHead #globalNaviAllRight ul li a {
+    display: block;
+    color: #676767;
+    font-size: 13px;
+    line-height:  1.462;
+    padding: 5px 15px 3px 15px;
+    text-decoration: none;
+    /* vertical-align: middle; */
+}
+#pageHead #globalNaviAllRight ul li a:hover {
+    text-decoration: underline;
+}
+#pageHead #globalNaviAllRight #login {
+    background: #d9d9d9;
+    height: 100%;
+}
+#pageHead #globalNaviAllRight #login a {
+    color: #000066;
+    font-size: 13px;
+    line-height:  1.462;
+    text-decoration: none;
+    display: block;
+    vertical-align: middle;
+    padding: 5px 10px 3px 10px;
+}
+#pageHead #globalNaviAllRight #login a:hover {
+    text-decoration: underline;
+}
+#pageHead #globalNaviAllRight #login a img {
+    height: 20px;
+    width: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* サイトヘッダー　ロゴのある行 */
+#pageHead #globalNaviLogo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;   
+    margin: 20px auto 20px auto;
+    width: 1040px;
+}
+/* サイトヘッダー　ロゴのある行・・・ロゴ */
+#pageHead #globalNaviLogo #logoImage {
+    display: block;
+    height: 45px;
+    width: 211px;
+}
+#pageHead #globalNaviLogo #logoImage img {
+    width: 100%;
+}
+/* サイトヘッダー　ロゴのある行・・・TEL・SNS */
+#pageHead #globalNaviLogo #telSNS {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+    width: 350px;
+}
+#pageHead #globalNaviLogo #telSNS #globalNaviTel {
+    margin-right: 10px;
+    width: 220px;
+}
+#pageHead #globalNaviLogo #telSNS #globalNaviTel img {
+    width: 100%;
+}
+#pageHead #globalNaviLogo #telSNS #globalNaviTel p {
+    color: #8d959c;
+    font-size: 13px;
+    line-height: 1.462;
+    margin: 0;
+    padding: 0 0 0 31px;
+}
+#pageHead #globalNaviLogo #telSNS #globalNaviSNS {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    /* text-align: right; */
+    /* vertical-align: middle; */
+    height: 100%;
+    width: 120px;
+}
+#pageHead #globalNaviLogo #telSNS #globalNaviSNS a {
+    display: block;
+    margin-left: 8px;
+}
+#pageHead #globalNaviLogo #telSNS #globalNaviSNS a:first-child {
+    margin-left: 0px;
+}
+#pageHead #globalNaviLogo #telSNS #globalNaviSNS a:hover {
+    opacity: 0.7;
+}
+/* サイトヘッダー　グローバルナビ(Aboutやコース)～資料請求 */
+#pageHead #globalNaviUnderLogo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;   
+    margin: 0 auto 20px auto;
+    width: 1040px;
+    position: relative;
+}
+#pageHead #globalNaviUnderLogo:after {
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border-top: 1px solid transparent;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 9px solid #181836;
+    top: 50px;
+    left: 75.5px;
+}
+/* サイトヘッダー　グローバルナビ(N高について、コース、提携) */
+#pageHead #globalNaviAboutCourse {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    /* height: 31px; */
+    width: 640px;
+    /* position: absolute; */
+}
+/* #pageHead #globalNaviAboutCourse:after {
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 9px solid transparent;
+    border-bottom-color: #181836;
+    top: 0;
+    left: 0;
+} */
+/* #pageHead #borderTest {
+    background-color: #333;
+    height: 20px;
+    width: 20px;
+    position: relative
+}
+#pageHead #borderTest:after {
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 9px solid transparent;
+    border-bottom-color: #181836;
+    top: 100%;
+    left: 0;
+} */
+#pageHead #globalNaviAboutCourse li {
+    border-left: solid 1px #dcdddd;
+    height: 31px;
+    list-style: none;
+    text-align: center;
+    width: 25%;
+}
+#pageHead #globalNaviAboutCourse li:last-child {
+    border-right: solid 1px #dcdddd;
+}
+#pageHead #globalNaviAboutCourse li a {
+    color: #1f286f;
+    text-decoration: none;
+}
+#pageHead #globalNaviAboutCourse li a:hover > span {
+    background-position: 50% -100%;
+}
+#pageHead #globalNaviAboutCourse li p {
+    color: #1f286f;
+    font-size: 15px;
+    line-height: 1.133;
+    padding: 0;
+    margin: 0;
+}
+#pageHead #globalNaviAboutCourse li span {
+    /* color: #272727; */
+    display: block;
+    font-size: 13px;
+    line-height: 19px;
+    height: 10px;
+    margin: 3px auto 0 auto;
+}
+#pageHead #globalNaviAboutCourse li:nth-child(1) span {
+    background-image: url('../images/global_nav_btn01_01.png');
+    background-position: 50% -100%;
+    /* background-repeat: no-repeat; */
+    /* background-size: 10px 16px; */
+    width: 76px;
+}
+#pageHead #globalNaviAboutCourse li:nth-child(2) span {
+    background-image: url('../images/global_nav_btn01_02.png');
+    width: 62px;
+}
+#pageHead #globalNaviAboutCourse li:nth-child(3) span {
+    background-image: url('../images/global_nav_btn01_03.png');
+    width: 96px;
+}
+#pageHead #globalNaviAboutCourse li:nth-child(4) span {
+    background-image: url('../images/global_nav_btn01_04.png');
+    width: 90px;
+}
+
+/* サイトヘッダー　説明会・相談会、資料請求 */
+/* .globalNaviMtgDoc はスクロールで出現するヘッダーにも使用 */
+.globalNaviMtgDoc {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+}
+.globalNaviMtgDoc li {
+    list-style: none;
+}
+.globalNaviMtgDoc li:nth-child(1) {
+    padding: 0;
+    width: 170px;
+}
+.globalNaviMtgDoc li:nth-child(2) {
+    padding-left: 10px;
+    width: 180px;
+}
+.globalNaviMtgDoc li a {
+    background-image: url('../images/icon_arrow01_right_blue01.png');
+    background-position: 94% 50%;
+    background-repeat: no-repeat;
+    background-size: 5px 9px;
+    border: solid 1px #000066;
+    color: #1f286f;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 9px 10px 8px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+.globalNaviMtgDoc li a:hover {
+    background-color: #1f286f;
+    background-image: url('../images/icon_arrow01_right_white01.png');
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+/* サイトヘッダー スクロールにより出現するヘッダー*/
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+#changeHeader {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#changeHeaderContent {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 1040px;
+}
+/* 出現するヘッダー・・・ロゴ */
+#changeHeader #changeHeadLogo {
+    display: block;
+    margin-top: 2px;
+    height: 36px;
+    width: 170px;
+}
+#changeHeader #changeHeadLogo img {
+    width: 100%;
+}
+/* 出現するヘッダー・・・TEL・説明会・資料請求 */
+#changeHeader #changeHeadTelMtgDoc {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+    width: 720px;
+}
+#changeHeader #changeHeadTel {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin: 3px 10px 0 0;
+    /* text-align: right; */
+    vertical-align: middle;
+    align-items: center;
+    width: 360px;
+}
+#changeHeader #changeHeadTel #changeHeadTelImg {
+    display: block;
+    padding-right: 10px;
+    width: 190px;
+}
+#changeHeader #changeHeadTel #changeHeadTelImg img {
+    width: 100%
+}
+#changeHeader #changeHeadTelMtgDoc p {
+    color: #8d959c;
+    font-size: 13px;
+    line-height: 1.462;
+    margin: 0;
+    padding: 3px 0 0 0;
+}
+#changeHeader #changeHeadMtgDoc {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+#changeHeader #changeHeadMtgDoc li {
+    list-style: none;
+}
+
+/* サイトヘッダー　最上部・・・入学案内～ログイン部分 */
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+/* ページ全体 サイトヘッダーとサイトフッターの間の部分 */
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+#pageBody {
+    /* font-family: "mplus-1p-light"; */
+}
+
+/* ページ上部　N高ロゴ～メイン画像部まで */
+#pageBodyHead {
+    width: 100%;
+}
+
+/* ページ上部　ローカルナビ・・・N高について */
+#pageBodyHead #localNaviAbout {
+    background: #181836;
+    padding: 10px 0 4px 0;
+    width: 100%;
+}
+#pageBodyHead #localNaviAbout #localNaviAboutList {
+    margin: 0 auto;
+    /* padding: 10px auto 4px auto; */ /* ここだとなぜか反映されなかったので上に指定 */
+    width: 1040px;
+}
+#pageBodyHead #localNaviAbout ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+}
+#pageBodyHead #localNaviAbout ul li {
+    content: "";
+    display: inline-block;
+    background-image: url('../images/icon_backslash01_black01.png');
+    background-position: 2.5px 50%;
+    background-repeat: no-repeat;
+    background-size: 10px 16px;
+    list-style: none;
+    margin: 0 0 4px 1px;
+    padding: 0;
+}
+#pageBodyHead #localNaviAbout ul:first-child li:first-child {
+    background: none;
+}
+#pageBodyHead #localNaviAbout ul:first-child li:first-child a {
+    margin: 0;
+}
+#pageBodyHead #localNaviAbout ul li a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.429;
+    /* margin-left: 7px; */
+    margin-left: 22px;
+    padding: 7px;
+    text-decoration: none;
+}
+#pageBodyHead #localNaviAbout ul li a:hover {
+    background: #ffffff;
+    color: #1f286f;
+}
+#pageBodyHead #localNaviAbout ul li a:visited {
+    color: #ffffff;
+}
+
+/* ページ上部　メイン画像部 */
+#pageBodyHead #pageTitle {
+    background-image: url('../images/about_mainimage01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 530px;
+    padding-top: 50px;
+    width: 100%;
+    /* position: relative; */
+}
+#pageBodyHead #pageTitleText {
+    /* font-family: 'mplus-1p-light'; */
+    /* margin: 50px auto auto auto; */
+    /* padding: 50 0 0 0; */
+    /* position: absolute; */
+    /* top: 50px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; */
+}
+#pageBodyHead #pageTitleText p {
+    /* font-family: 'mplus-1p-light'; */
+    background-image: url(../images/line01_white01.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 200px 1px;
+    color: #ffffff;
+    font-size: 52px;
+    line-height: 1.8;
+    margin: 0 0 15px 0;
+    /* padding-bottom: 15px; */
+    text-align: center;
+}
+#pageBodyHead #pageTitleText #pageTitleAbout {
+    height: 28px;
+    text-align: center;
+}
+#pageBodyHead #pageTitleText #pageTitleAbout img {
+    height: 13px;
+}
+#pageBodyHead #pageTitleImage {
+    width: 100vw;
+    /* position: relative; */
+}
+
+/* パンくずリスト */
+#topicPath {
+    border-bottom: solid 1px #e1e1e1;
+    margin: 0 0 30px 0;
+    width: 100%;
+}
+#topicPath p {
+    color: #272727;
+    font-size: 14px;
+    line-height: 1.786;
+    padding: 20px 10px 18px 10px;
+    margin: 0 auto;
+    width: 1040px;
+}
+#topicPath p a {
+    color: #36538d;
+    text-decoration: none;
+}
+#topicPath p a:hover {
+    text-decoration: underline;
+}
+#topicPath p a:visited {
+    color: #36538d;
+}
+
+/* ページメイン */
+#pageBodyMain {
+    color: #272727;
+    padding-top: 30px;
+}
+#pageBodyMain a:visited {
+    color: #272727;
+}
+/* ページメイン上部の幅1040px */
+#pageBodyMain #pageBodyMainUpper {
+    margin: 0 auto;
+    padding: 0;
+    width: 1040px;
+}
+/* ページメイン上部の幅100% */
+#pageBodyMain #pageBodyMainLower {
+    margin: 0 0 210px 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* ページメイン・・・メインコンテンツ */
+#pageBodyMain #mainContent {
+    text-align: center;
+    margin-bottom: 70px;
+}
+#pageBodyMain #mainContent h1 {
+    font-size: 33px;
+    font-weight: normal;
+    line-height: 1.788;
+    margin-bottom: 70px;
+}
+#pageBodyMain #mainContent h2 {
+    background-image: url(../images/line01_black01.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 200px 1px;
+    /* font-family: "mplus-1p-Regular"; */
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.818;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+}
+#pageBodyMain #mainContent p {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.813;
+    max-width: 640px;
+    text-align: left;
+}
+
+/* ページメイン・・・教育方針 */
+#pageBodyMain #eduPolicy {
+    width: 100%;
+    margin-bottom: 80px;
+}
+/* N高の魅力でもh2使用 */
+#pageBodyMain .underlineH2 {
+    background-image: url('../images/line02_black01.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    /* font-family: "mplus-1p-regular"; */
+    font-size: 26px;
+    line-height: 1.808;
+    /* margin-bottom: 30px; */
+    padding-bottom: 10px;
+}
+#pageBodyMain #eduPolicy #eduPolicyFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 295.645px;
+    margin-top: 30px;
+}
+#pageBodyMain #eduPolicy ul {
+    margin: 0;
+    padding: 0;
+    width: 55%;
+}
+#pageBodyMain #eduPolicy ul li {
+    font-family: "mplus-1p-regular";
+    font-size: 19px;
+    line-height: 1.789;
+    list-style: none;
+    padding-bottom: 30px;
+}
+#pageBodyMain #eduPolicy ul li span {
+    border-right: solid 1px #1c1c1c;
+    box-sizing: content-box;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 1.792;
+    margin-right: 15px;
+    padding: 5px 15px 5px 0;
+}
+#pageBodyMain #eduPolicy #eduPolicyImage {
+    margin-top: 10px; 
+    position: relative;
+    width: 45%;
+}
+#pageBodyMain #eduPolicy #eduPolicyImage img {
+    height: 285.65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ページメイン・・・N STANDARDS */
+#pageBodyMain #nStandards {
+    border: solid 1px #ddd;
+    width: 66%;
+    margin: 0 auto 80px auto;
+}
+/* #pageBodyMain #nStandards a {
+    background: #f7f7f7;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 30px 40px;
+} */
+#pageBodyMain #nStandards #nStaInner {
+    background: #f7f7f7;
+    color: #272727;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 30px 40px;
+    /* width: 265px; */
+}
+/* #pageBodyMain #nStandards #nStaInner:hover {
+    opacity: 0.7;
+} */
+#pageBodyMain #nStandards #nStaInner:hover > #nStaImage {
+    opacity: 0.7;
+}
+#pageBodyMain #nStandards #nStaInner:hover > #nStaText span {
+    opacity: 0.7;
+}
+#pageBodyMain #nStandards #nStaInner #nStaImage {
+    height: 265px;
+    margin: 20px;
+    width: 160px;
+}
+#pageBodyMain #nStandards #nStaInner #nStaText {
+    /* width: 423.75px; */
+    /* width: 100%; */
+}
+#pageBodyMain #nStandards #nStaInner #nStaText h2 {
+    font-size: 22px;
+    height: 38.75px;
+    line-height: 1.818;
+    margin-bottom: 10px;
+}
+#pageBodyMain #nStandards #nStaInner #nStaText p {
+    font-size: 16px;
+    height: 115px;
+    line-height: 1.813;
+    margin-bottom: 25px;
+    word-wrap:break-word;
+}
+#pageBodyMain #nStandards #nStaInner #nStaText span {
+    content: "";
+    display: inline-block;
+    background-image: url('../images/icon_arrow01_right_black01.png');
+    background-repeat: no-repeat;
+    background-size: 5px 9px;
+    height: 28.75px;
+    padding-left: 16px;
+}
+#pageBodyMain #nStandards #nStaInner #nStaText span img {
+    /* font-family: "mplus-1p-thin";
+    font-size: 16px; */
+    width: 70px;
+    height: 13px;
+}
+
+/* ページメイン・・・N高の魅力 */
+#pageBodyMain #appealPoint {
+    width: 100%;
+    margin-bottom: 110px;
+}
+#pageBodyMain #appealPoint .appealPointFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+#pageBodyMain #appealPoint ul {
+    margin: 0;
+    padding: 0;
+    width: 47.115%;
+}
+#pageBodyMain #appealPoint ul li {
+    list-style: none;
+}
+#pageBodyMain #appealPoint ul li h3 {
+    border-bottom: solid 1px #1c1c1c;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.8;
+    padding: 0 0 25px 0;
+    margin: 0 0 10px 0;
+}
+#pageBodyMain #appealPoint ul li p {
+    font-size: 16px;
+    line-height: 1.813;
+    padding: 0;
+    margin: 0 0 27px 0;
+}
+#pageBodyMain #appealPoint ul li span {
+    font-size: 13px;
+    line-height: 1.846;
+}
+
+/* ページメイン・・・サブコンテンツ */
+#pageBodyMain .subContent {
+    margin: 0 auto;
+    /* padding-bottom: 110px; */
+    text-align: center;
+    width: 1040px;
+    /* 範囲が分かりやすいように一時的に囲み */
+    /* border: solid 1px; */
+}
+#pageBodyMain .paddingBottom110 {
+    padding-bottom: 110px;
+}
+#pageBodyMain .paddingBottom50 {
+    padding-bottom: 50px;
+}
+#pageBodyMain .subContentGray {
+    background-color: #f7f7f7;
+    /* 薄くて見えづらいので一時的に色付け */
+    /* background-color: gray; */
+    width: 100%;
+    padding-top: 70px;
+    margin: 0;
+}
+#pageBodyMain .subContentWhite {
+    width: 100%;
+    padding-top: 70px;
+    margin: 0;
+}
+/* ページメイン・・・サブコンテンツ真ん中上部 */
+#pageBodyMain .subContentTitle h2 {
+    background-image: url('../images/line01_black01.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 200px 2px;
+    display: inline-block;
+    font-size: 33px;
+    font-weight: normal;
+    line-height: 1.818;
+    /* margin-bottom: 20px; */
+    margin: 0 0 20px 0;/* なぜかmargin-topが勝手に入っちゃうので強制的にゼロにする */
+    padding-bottom: 10px;
+}
+#pageBodyMain .subContentTitle p {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.813;
+    margin-bottom: 60px;
+}
+#pageBodyMain .subContentTitleMargin {
+    margin-bottom: 60px;
+}
+/* ページメイン・・・サブコンテンツ下部 */
+#pageBodyMain .subContentDescription {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+#pageBodyMain .subContentDescription:last-child {
+    margin-bottom: 0;
+}
+/* ページメイン・・・サブコンテンツ画像側 */
+#pageBodyMain .subContentDescImg {
+    width: 69.23%;
+}
+#pageBodyMain .subContentDescImg img {
+    width: 100%;
+}
+/* ページメイン・・・サブコンテンツテキスト側 */
+#pageBodyMain .subContentDescText {
+    text-align: left;
+    width: 27.404%;
+}
+#pageBodyMain .subContentDescText a {
+    color: #272727;
+    text-decoration: none;
+}
+#pageBodyMain .subContentDescText a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+#pageBodyMain .subContentDescText a:visited {
+    color: #272727;
+}
+#pageBodyMain .subContentDescText .programImg {
+    background: #1c1c1c;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 2px 10px;
+    /* vertical-align: bottom; */
+}
+#pageBodyMain .subContentDescText .programImg img {
+    height: 14px;
+    vertical-align: bottom;
+}
+#pageBodyMain .subContentDescText h3 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.818;
+    margin: 0 0 20px 0;/* なぜかmargin-topが勝手に入っちゃうので強制的にゼロにする */
+}
+#pageBodyMain .subContentDescText .programText {
+    font-size: 16px;
+    line-height: 1.8125;
+    margin-bottom: 20px;
+}
+#pageBodyMain .subContentDescText .programTextSmall {
+    font-size: 11px;
+    line-height: 1.818;
+    margin-bottom: 20px;
+}
+#pageBodyMain .subContentDescText .programReadMore {
+    content: "";
+    display: inline-block;
+    background-image: url('../images/icon_arrow01_right_black01.png');
+    background-repeat: no-repeat;
+    background-size: 5px 9px;
+    /* height: 10px;
+    width: 5px; */
+    padding-left: 16px;
+    /* margin: 0 16px 0 0; */
+    /* vertical-align: baseline; */
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+#pageBodyMain .subContentDescText .programReadMore img {
+    height: 13px;
+    width: 70px;
+}
+
+/* ページメイン・・・サブコンテンツ最後の4つのリンク */
+#pageBodyMain .subContent ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+#pageBodyMain .subContent .margin_50 {
+    margin-bottom: 50px;
+}
+#pageBodyMain .subContent ul li {
+    background: url(../images/bg_diagonal01_black01.png);
+    /* border-image-source: url(../images/bg_diagonal01_black01.png);
+    border-image-width: 6px;
+    border-image-repeat: repeat; */
+    box-sizing: border-box;
+    display: table;
+    list-style: none;
+    /* margin: 0 5.77% 30px 0; */
+    margin-bottom: 30px;
+    padding: 6px;
+    width: 47.115%;
+    vertical-align: middle;
+}
+#pageBodyMain .subContent ul li:first-child {
+    margin-right: 5.77%;
+}
+#pageBodyMain .subContent .subContentList_133 {
+    height: 133px;
+}
+#pageBodyMain .subContent .subContentList_111 {
+    height: 111px;
+}
+#pageBodyMain .subContent ul li a {
+    background: #ffffff;
+    background-image: url(../images/icon_arrow01_right_black01.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 5px 9px;
+    box-sizing: border-box;
+    color: #272727;
+    /* display: block; */
+    display: table-cell;
+    padding: 8px 42px 12px 26px;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+}
+#pageBodyMain .subContent ul li a:hover {
+    opacity: 0.7;
+}
+#pageBodyMain .subContent ul li a:visited {
+    color: #272727;
+}
+#pageBodyMain .subContent ul li a h3 {
+    font-size: 25px;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+#pageBodyMain .subContent ul li a p {
+    font-size: 13px;
+    line-height: 1.769;
+    margin: 0;
+    padding: 0;
+}
+
+#pageBodyMain #youtube {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 1040px;
+    /* 範囲が分かりやすいように一時的に囲み */
+    /* border: solid 1px; */
+}
+#pageBodyMain #youtube ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#pageBodyMain #youtube ul li {
+    /* height: 226.031px; */
+    list-style: none;
+    margin-left: 0.5%;
+    width: 33%;
+}
+#pageBodyMain #youtube ul li:first-child {
+    margin: 0;
+}
+#pageBodyMain #youtube .youtubeLink {
+    height: 0px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /*高さをpaddingで指定(16:9)*/
+}
+#pageBodyMain #youtube .youtubeLink iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    /* height: 100% !important; 
+    width: 100% !important; */
+}
+#pageBodyMain #youtube .youtubeTitle {
+    font-size: 13px;
+    line-height: 1.769;
+}
+
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+/* ページフッター　企業情報以下の部分 */
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+#pageBodyFoot {
+    background-image: url('../images/footer02_bg01.png');
+    width: 100%;
+    /* 背景確認用 */
+    height: 250px;
+}
+#pageBodyFoot #pageBodyFootContent {
+    margin: 0 auto;
+    padding: 35px 10px 20px 10px;
+    width: 1040px;
+}
+#pageBodyFoot #pageBodyFootContent p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+#pageBodyFoot #pageBodyFootContent #pageBodyFootFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    margin: 0 245px;
+}
+#pageBodyFoot #pageBodyFootContent #pageBodyFootLeft {
+
+}
+#pageBodyFoot #pageBodyFootContent #pageBodyFootRight {
+    /* color: #ffffff;
+    font-size: 13px;
+    line-height: 1.462; */
+    width: 250px;
+}
+
+#pageBodyFoot #pageBodyFootContent #pageBodyFootLeft ul {
+    padding: 0;
+    margin: 0;
+    width: 258px;
+}
+#pageBodyFoot #pageBodyFootContent #pageBodyFootLeft ul li {
+    /* background: #ffffff; */
+    /* background-image: url('../images/icon_arrow01_right_black01.png');
+    background-position: 94% 50%;
+    background-repeat: no-repeat; */
+    /* background-size: 200px 1px; */
+    list-style: none;
+    margin-bottom: 14px;
+}
+#pageBodyFoot #pageBodyFootLeft ul li a {
+    color: #1c1c1c;
+    background: #ffffff;
+    background-image: url('../images/icon_arrow01_right_black01.png');
+    background-position: 94% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    font-size: 18px;
+    line-height: 1.389;
+    padding: 14px 24px 9px 18px;
+    text-decoration: none;
+}
+#pageBodyFoot #pageBodyFootLeft ul li a:hover {
+    background: rgba(255, 255, 255, 0.7);
+    background-image: url('../images/icon_arrow01_right_black01.png');
+    background-position: 94% 50%;
+    background-repeat: no-repeat;
+}
+#pageBodyFoot #pageBodyFootLeft ul li a:visited {
+    color: #1c1c1c;
+}
+#pageBodyFoot #pageBodyFootLeft ul li a:before {
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 27px;
+    width: 29px;
+    margin: 0 16px 3px 0;
+    vertical-align: middle;
+}
+#pageBodyFoot #pageBodyFootLeft ul li:nth-child(1) a:before {
+    background-image: url('../images/icon_book01_black01.png');
+}
+#pageBodyFoot #pageBodyFootLeft ul li:nth-child(2) a:before {
+    background-image: url('../images/icon_balloon01_black01.png');
+}
+
+#pageBodyFoot #pageBodyFootRight #pageBodyFootRightImgLink {
+    display: block;
+    margin-top: 10px;
+}
+#pageBodyFoot #pageBodyFootRight #pageBodyFootRightImgLink:hover {
+    opacity: 0.7;
+}
+#pageBodyFoot #pageBodyFootRight #pageBodyFootRightImgLink img {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+}
+#pageBodyFoot #pageBodyFootRight p {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.462;
+    margin-bottom: 16px;
+    padding-left: 40px;
+}
+#pageBodyFoot #pageBodyFootRight #pageBodyFootRightTextLink {
+    background-image: url('../images/icon_arrow01_right_white01.png');
+    background-position: 94% 50%;
+    background-repeat: no-repeat;
+    background-size: 5px 9px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1.462;
+    margin-left: 38px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 212px;
+    box-sizing: border-box;
+}
+#pageBodyFoot #pageBodyFootRight #pageBodyFootRightTextLink:hover {
+    text-decoration: underline;
+}
+#pageBodyFoot #pageBodyFootRight #pageBodyFootRightTextLink:visited {
+    color: #ffffff;
+}
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+/* サイトフッター Follow Us 以下の部分 */
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+#pageFoot {
+    background: #f8f8f8;
+    width: 100%;
+}
+#pageFoot #pageFootContent {
+    margin: 0 auto;
+    padding-top: 60px;
+    position: relative;
+    width: 1040px;
+}
+/* サイトフッター・・・pagetopのボタン */
+#pageFoot #pageFootContent #pagetop {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 35px;
+    left: 88%;
+}
+#pageFoot #pageFootContent #pagetop:hover {
+    opacity: 0.7;
+}
+
+/* サイトフッター・・・人の属性ごとのリンク */
+#pageFoot #pageFootGroupLink ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 70px 0 ;
+    padding: 0;
+}
+#pageFoot #pageFootGroupLink ul li {
+    list-style: none;
+    padding: 0 0 0 12p;
+}
+#pageFoot #pageFootGroupLink ul li:before  {
+    content: "|";
+    margin: 0 12px 0 12px;
+}
+#pageFoot #pageFootGroupLink ul li:first-child:before  {
+    content: none;
+}
+#pageFoot #pageFootGroupLink ul li a {
+    color: #000066;
+    font-family: "mplus-1p-regular";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.000;
+    text-decoration: none;
+}
+#pageFoot #pageFootGroupLink ul li a:hover {
+    text-decoration: underline;
+}
+#pageFoot #pageFootGroupLink ul li a:visited {
+    color: #000066;
+}
+
+/* サイトフッター・・・リンクの一覧 */
+#pageFoot #pageFootLinkList {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+#pageFoot #pageFootLinkList .pageFootLinkBranch {
+    margin: 0 0 0 1.923%;
+    width: 18.46%;
+}
+#pageFoot #pageFootLinkList .pageFootLinkBranch:first-child {
+    margin: 0;
+}
+
+#pageFoot .pageFootLinkBranch .pageFootLinkTitle {
+    margin: 0 0 10px 0;
+    /* position: relative;
+    top: 0; */
+}
+#pageFoot .pageFootLinkBranch .pageFootLinkTitle a {
+    color: #000066;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.375;
+    text-decoration: none;
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    position: relative;
+}
+#pageFoot .pageFootLinkBranch .pageFootLinkTitle a:hover {
+    text-decoration: underline;
+}
+#pageFoot .pageFootLinkBranch .pageFootLinkTitle a:hover > span {
+    text-decoration: underline;
+}
+#pageFoot .pageFootLinkBranch .pageFootLinkTitle a span {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.462;
+    position: absolute;
+    bottom: 100%;
+}
+/* #pageFoot .pageFootLinkBranch .pageFootLinkTitle:first-child a {
+    margin-top: -22px;
+} */
+#pageFoot .pageFootLinkBranch ul {
+    margin: 0;
+    padding: 0;
+}
+/* #pageFoot .pageFootLinkBranch ul:nth-child(1) { */
+/* #pageFoot .pageFootLinkBranch ul:first-child { */
+#pageFoot .pageFootLinkBranch:last-child .pageFootLinkTitle + ul {
+    margin-bottom: 18px;
+    border-bottom: solid 1px #c9c9c9;
+}
+#pageFoot .pageFootLinkBranch:last-child .pageFootLinkTitle + ul +ul {
+    margin-top: 22px;
+}
+#pageFoot .pageFootLinkBranch ul li {
+    list-style: none;
+    margin: 0 0 10px 0;
+}
+#pageFoot .pageFootLinkBranch ul li a {
+    color: #272727;
+    font-size: 14px;
+    line-height: 1.429;
+    text-decoration: none;
+}
+#pageFoot .pageFootLinkBranch ul li a:hover {
+    text-decoration: underline;
+}
+
+/* サイトフッター・・・個人情報保護方針・概要・SNS */
+#pageFoot #pageFootLinkOther {
+    border-top: solid 1px #c9c9c9;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px 0 25px 0;
+}
+#pageFoot #pageFootLinkOther ul {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+#pageFoot #pageFootLinkOther ul li {
+    list-style: none;
+}
+#pageFoot #pageFootLinkOther ul li a {
+    text-decoration: none;
+}
+#pageFoot #pageFootLinkOther ul li a:visited {
+    color: #272727;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkPrivacy {
+    padding: 15px 0;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkPrivacy li {
+    font-size: 14px;
+    line-height: 1.429;
+    margin: 0 10px 0 0;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkPrivacy li a {
+    color: #272727;
+    font-size: 14px;
+    line-height: 1.429;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkPrivacy li a:hover {
+    text-decoration: underline;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkPrivacy li a:visited {
+    color: #272727;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS {
+    padding: 0;
+    margin: 0;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS li {
+    border-left: solid 1px #ddd;
+    width: 155px;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS li:first-child {
+    border: none;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS li:last-child {
+    width: 190px;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS li a {
+    display: block;
+    color: #272727;
+    font-size: 13px;
+    line-height: 1.462;
+    padding: 10px;
+    /* width: 155px; */
+    position: relative;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS li a:hover {
+    background: rgba(0,0,0,0.05);
+    text-decoration: none;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS li a:visited {
+    color: #272727;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS li a:after {
+    content: "＞";
+    color: #aaa;
+    font-size: 10px;
+    top: 24px;
+    right: 7px;
+    position: absolute;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS li a img {
+    padding-right: 5px;
+    width: 32px;
+}
+#pageFoot #pageFootLinkOther #pageFootLinkSNS li a span {
+    display: inline-block;
+}
+
+/* サイトフッター・・・最下段　ホームへのリンク・コピーライト */
+#pageFoot #lastFooter {
+    background: #1a1a1a;
+    width: 100%;
+}
+#pageFoot #lastFooterContent {
+    color: #999999;
+    font-size: 11px;
+    line-height: 1.363;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 18px 0 16px 0;
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 1040px;
+}
+#pageFoot #lastFooterContent a {
+    color: #999999;
+    display: block;
+    padding: 0;
+    margin : 0;
+    text-decoration: none;
+}
+#pageFoot #lastFooterContent a:hover {
+    text-decoration: underline;
+}
+#pageFoot #lastFooterContent a:visited {
+    color: #999999;
+}
+#pageFoot #lastFooterContent p {
+    padding: 0;
+    margin: 0;
+}
