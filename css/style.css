@@ -652,6 +652,9 @@ body {
     font-size: 13px;
     line-height: 1.846;
 }
+#pageBodyMain .appealPointImage {
+    width: 47.115%;
+}
 
 /* ページメイン・・・サブコンテンツ：画像と文章の組み合わせ */
 #pageBodyMain .subContent {
